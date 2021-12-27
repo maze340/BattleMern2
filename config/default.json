@@ -1,0 +1,6 @@
+{
+    "mongoURI": "mongodb+srv://maze:chalem40M@cluster0.lljow.mongodb.net/myFirstDatabase?retryWrites=true&w=majority",
+    "jwtSecret": "secretMan",
+    "githubClientId": "302e32e2ec79edefcd4c",
+    "githubSecret": "3e62067f8572ad6e1cbcac346bddd73923a079ad"
+}

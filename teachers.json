@@ -19,6 +19,12 @@
       "type": "teacher",
       "date": "2021-12-29T23:30:10.842Z",
       "__v": 0
+    },
+    {
+      "name": "moi",
+      "email": "moi@hotmail.fr",
+      "password": "123456",
+      "type": "teacher"
     }
   ]
 }

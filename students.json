@@ -31,10 +31,34 @@
       "__v": 0
     },
     {
+      "_id": "61ccf8902172095aa857f69b",
       "name": "please",
       "email": "p1@hotmail.fr",
       "password": "123456",
-      "type": "student"
+      "avatar": "//www.gravatar.com/avatar/859bab15be01106ce6c73eb0522cbef9?s=200&r=pg&d=mm",
+      "type": "student",
+      "date": "2021-12-30T00:08:48.825Z",
+      "__v": 0
+    },
+    {
+      "_id": "61cd022fb788395674e138e7",
+      "name": "piu",
+      "email": "piu@hotmail.fr",
+      "password": "123456",
+      "avatar": "//www.gravatar.com/avatar/22bb39d323dfb7b0cbb529d3a0577420?s=200&r=pg&d=mm",
+      "type": "student",
+      "date": "2021-12-30T00:49:51.406Z",
+      "__v": 0
+    },
+    {
+      "_id": "61cd02d4a49d4001505ad216",
+      "name": "tr",
+      "email": "yt@hotmail.fr",
+      "password": "123456",
+      "avatar": "//www.gravatar.com/avatar/d7c7fe52170597b58c19b45ebfa02c6e?s=200&r=pg&d=mm",
+      "type": "student",
+      "date": "2021-12-30T00:52:36.096Z",
+      "__v": 0
     }
   ]
 }

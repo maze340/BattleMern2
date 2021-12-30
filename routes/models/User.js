@@ -17,6 +17,12 @@ const userSchema = mongoose.Schema({
     avatar: {
         type: String
     },
+
+    type: {
+        type: String
+    },
+
+    
     date: {
         type: Date,
         default: Date.now

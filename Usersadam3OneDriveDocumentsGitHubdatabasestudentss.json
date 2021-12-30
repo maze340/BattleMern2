@@ -1,0 +1,60 @@
+{
+  "users": [
+    {
+      "_id": "61cceae202a3d34f304d0022",
+      "name": "lop",
+      "email": "l@hotmail.fr",
+      "password": "123456",
+      "avatar": "//www.gravatar.com/avatar/8a29a68e921bc3312c2df03b810e456e?s=200&r=pg&d=mm",
+      "type": "student",
+      "date": "2021-12-29T23:10:26.550Z",
+      "__v": 0
+    },
+    {
+      "_id": "61ccecb61cf25e4d7030c09b",
+      "name": "miko",
+      "email": "af@hotmail.fr",
+      "password": "123456",
+      "avatar": "//www.gravatar.com/avatar/7fc4594e548478ed92e4bdacb35ef70e?s=200&r=pg&d=mm",
+      "type": "student",
+      "date": "2021-12-29T23:18:14.659Z",
+      "__v": 0
+    },
+    {
+      "_id": "61cced0215472963042eca02",
+      "name": "ty",
+      "email": "t@hotmail.fr",
+      "password": "123456",
+      "avatar": "//www.gravatar.com/avatar/de031604747903504eed04b5c56e19c4?s=200&r=pg&d=mm",
+      "type": "student",
+      "date": "2021-12-29T23:19:30.066Z",
+      "__v": 0
+    },
+    {
+      "_id": "61ccf8902172095aa857f69b",
+      "name": "please",
+      "email": "p1@hotmail.fr",
+      "password": "123456",
+      "avatar": "//www.gravatar.com/avatar/859bab15be01106ce6c73eb0522cbef9?s=200&r=pg&d=mm",
+      "type": "student",
+      "date": "2021-12-30T00:08:48.825Z",
+      "__v": 0
+    },
+    {
+      "_id": "61cd022fb788395674e138e7",
+      "name": "piu",
+      "email": "piu@hotmail.fr",
+      "password": "123456",
+      "avatar": "//www.gravatar.com/avatar/22bb39d323dfb7b0cbb529d3a0577420?s=200&r=pg&d=mm",
+      "type": "student",
+      "date": "2021-12-30T00:49:51.406Z",
+      "__v": 0
+    },
+    {
+      "name": "tr",
+      "email": "yt@hotmail.fr",
+      "password": "123456",
+      "type": "student"
+    }
+  ]
+}

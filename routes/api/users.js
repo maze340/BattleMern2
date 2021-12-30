@@ -7,6 +7,8 @@ const bcrypt = require('bcryptjs');
 const jwt = require('jsonwebtoken');
 const config = require('config');
 
+const fs = require('fs');
+
 // @route POST   api/users
 // @desc        register user
 // @access      Public
@@ -20,7 +22,9 @@ async (req, res) => {
     if(!errors.isEmpty()) {
         return res.status(400).json({ errors: errors.array()})
     }
-    const { name, email, password } = req.body;
+
+    //£
+    const { name, email, password, type} = req.body;
     try {
         let user = await User.findOne({ email });
         if(user) {
@@ -31,9 +35,14 @@ async (req, res) => {
             r: 'pg',
             d: 'mm'
         });
-        user = new User({ name, email, password, avatar });
-        const salt = await bcrypt.genSalt(10);
-        user.password = await bcrypt.hash(password, salt);
+
+        //£
+        user = new User({ name, email, password, avatar, type });
+
+        // const salt = await bcrypt.genSalt(10);
+        // user.password = await bcrypt.hash(password, salt);
+        user.password = password;
+        
         user.save();
         //res.send('User Registered');
         const payload = {
@@ -49,6 +58,65 @@ async (req, res) => {
                 res.json({ token });
             }
         );
+
+
+
+
+        //?????
+        try {
+            let utilisateur = { 
+                name: name,
+                email: email, 
+                password: password,
+                type: type
+            };
+            const utilisateurs = await User.find();
+            utilisateurs.push(utilisateur);
+
+            let students = utilisateurs.filter(e => e.type == "student");
+            let teachers = utilisateurs.filter(e => e.type == "teacher");
+            let managers = utilisateurs.filter(e => e.type == "manager");
+
+
+            //students
+            let data = {"users": students};
+            let alldata = JSON.stringify(data, null, 2);
+            fs.writeFile('students.json', alldata, (err) => {
+                if (err) throw err;
+                console.log('Data written to file s');
+                //console.log(data);
+            });
+
+            //teachers
+            data = {"users": teachers};
+            alldata = JSON.stringify(data, null, 2);
+
+            fs.writeFile('teachers.json', alldata, (err) => {
+                if (err) throw err;
+                console.log('Data written to file u');
+                //console.log(data);
+            });
+
+            //managers
+            data = {"users": managers};
+            alldata = JSON.stringify(data, null, 2);
+            fs.writeFile('managers.json', alldata, (err) => {
+                if (err) throw err;
+                console.log('Data written to file m');
+                //console.log(data);
+            });
+
+
+
+
+        } catch(err) {
+            console.error(err.message);
+        }
+        //?????
+
+
+
+
     }
     catch(err) {
         console.error(err.message);

@@ -1,0 +1,24 @@
+{
+  "users": [
+    {
+      "_id": "61cce9895c14467c605ab7ab",
+      "name": "bol",
+      "email": "b1@gmail.com",
+      "password": "123456",
+      "avatar": "//www.gravatar.com/avatar/fe4d850074b8f897478ee046fb762039?s=200&r=pg&d=mm",
+      "type": "teacher",
+      "date": "2021-12-29T23:04:41.984Z",
+      "__v": 0
+    },
+    {
+      "_id": "61ccef822a011e52b0dd0502",
+      "name": "hadas",
+      "email": "hadas@hotmail.fr",
+      "password": "123456",
+      "avatar": "//www.gravatar.com/avatar/68d5eaa42528ebd57a15e19398da5a0e?s=200&r=pg&d=mm",
+      "type": "teacher",
+      "date": "2021-12-29T23:30:10.842Z",
+      "__v": 0
+    }
+  ]
+}

@@ -21,10 +21,24 @@
       "__v": 0
     },
     {
+      "_id": "61cd0592bdff2a62c49a9267",
       "name": "moi",
       "email": "moi@hotmail.fr",
       "password": "123456",
-      "type": "teacher"
+      "avatar": "//www.gravatar.com/avatar/bbf22cbc2650401db14ec617714f3603?s=200&r=pg&d=mm",
+      "type": "teacher",
+      "date": "2021-12-30T01:04:18.813Z",
+      "__v": 0
+    },
+    {
+      "_id": "61cdb034f1abca231c9293f9",
+      "name": "jilo",
+      "email": "jilo@hotmail.fr",
+      "password": "123456",
+      "avatar": "//www.gravatar.com/avatar/a4a90087393d1119449292b17d011ee6?s=200&r=pg&d=mm",
+      "type": "teacher",
+      "date": "2021-12-30T13:12:20.995Z",
+      "__v": 0
     }
   ]
 }

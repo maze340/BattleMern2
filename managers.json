@@ -29,6 +29,16 @@
       "type": "manager",
       "date": "2021-12-29T23:28:55.746Z",
       "__v": 0
+    },
+    {
+      "_id": "61cd78a6863ef169fca223e8",
+      "name": "manager",
+      "email": "manager@hotmail.fr",
+      "password": "123456",
+      "avatar": "//www.gravatar.com/avatar/59340cb5ec8f6a2e304a405b2e143dad?s=200&r=pg&d=mm",
+      "type": "manager",
+      "date": "2021-12-30T09:15:18.755Z",
+      "__v": 0
     }
   ]
 }

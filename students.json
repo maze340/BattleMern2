@@ -59,6 +59,42 @@
       "type": "student",
       "date": "2021-12-30T00:52:36.096Z",
       "__v": 0
+    },
+    {
+      "_id": "61cd6ba996c6e210e462f416",
+      "name": "mmmmmmmmm",
+      "email": "m@gmail.com",
+      "password": "123456",
+      "avatar": "//www.gravatar.com/avatar/e4ba34574a801931a8fc2913a12bf6f0?s=200&r=pg&d=mm",
+      "type": "student",
+      "date": "2021-12-30T08:19:53.822Z",
+      "__v": 0
+    },
+    {
+      "_id": "61cd71a7c28c6c5c40568eae",
+      "name": "kola",
+      "email": "kola@hotmail.fr",
+      "password": "123456",
+      "avatar": "//www.gravatar.com/avatar/163ea66d6c0b5a622d9f43450549ca08?s=200&r=pg&d=mm",
+      "type": "student",
+      "date": "2021-12-30T08:45:27.498Z",
+      "__v": 0
+    },
+    {
+      "_id": "61cd7fdfe0b7133ec84c3cb5",
+      "name": "mec",
+      "email": "mec@hotmail.fr",
+      "password": "123456",
+      "avatar": "//www.gravatar.com/avatar/944125ef34961b65cff0fa7321830d85?s=200&r=pg&d=mm",
+      "type": "student",
+      "date": "2021-12-30T09:46:07.534Z",
+      "__v": 0
+    },
+    {
+      "name": "Michael",
+      "email": "m@mail.com",
+      "password": "123456",
+      "type": "student"
     }
   ]
 }

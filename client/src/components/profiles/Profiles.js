@@ -16,14 +16,14 @@ const Profiles = ({ getProfiles, profile: { profiles, loading } }) => {
         <Spinner />
       ) : (
         <Fragment>
-          <h1 className="large text-primary">Developers</h1>
+          <h1 className="large text-primary">Students</h1>
           <p className="lead">
             <i className="fab fa-connectdevelop" /> Browse and connect with
             students
           </p>
           <div className="profiles">
             {profiles.length > 0 ? (
-              profiles.map((profile) => (
+              profiles.filter(profile => (profile.status && profile.status !== "Teacher" && profile.status !== "Manager")).map((profile) => (
                 <ProfileItem key={profile._id} profile={profile} />
               ))
             ) : (

@@ -99,7 +99,7 @@ const EditProfile = ({
     return (
         <section className="container">
       <h1 className="large text-primary">
-        Create Your Profile
+        Your Profile
       </h1>
       <p className="lead">
         <i className="fas fa-user"></i> Let's get some information to make your
@@ -110,8 +110,9 @@ const EditProfile = ({
         <div className="form-group">
           <select name="status" value={status} onChange={onChange}>
             <option value="0">* Select School Status</option>
-            <option value="Student">Student Straight</option>
             <option value="Teacher">Teacher</option>
+            <option value="Manager">School Manager</option>
+            <option value="Student">Student Straight</option>
             <option value="Student Helper">Student Helper</option>
             <option value="Student Manager">Student Manager</option>
             <option value="Instructor">Student Teacher</option>

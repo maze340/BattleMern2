@@ -1,15 +1,27 @@
-import React, { Fragment } from 'react'
+import React, { Fragment, useEffect } from 'react'
 import { Link } from 'react-router-dom';
 import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
 import { logout } from '../../actions/auth';
 
-export const Navbar = ({ auth: { isAuthenticated, loading }, logout }) => {
+import { getCurrentProfile } from '../../actions/profile';
+
+
+// export const Navbar = ({ auth: { isAuthenticated, loading }, logout, getCurrentProfile, profile : {profile} }) => {
+const Navbar = ({ auth: { isAuthenticated, loading }, logout, getCurrentProfile, profile : {profile} }) => {
+
+    useEffect(() => {
+        getCurrentProfile();
+      }, []);   
+
     const authLinks = (
         <ul>
-            <li>
-                <Link to="/profiles">Students</Link>
-            </li>
+            {
+                profile !== null && profile.status && profile.status == "Manager" &&
+                <li>
+                    <Link to="/profiles">Students</Link>
+                </li>
+            }
             <li>
                 <Link to="/dashboard">
                 <i className="fas fa-user" />{' '}
@@ -17,7 +29,7 @@ export const Navbar = ({ auth: { isAuthenticated, loading }, logout }) => {
                 </Link>
             </li>
             <li>
-                <Link onClick={logout} to="#!">
+                <Link onClick={logout} to="/">
                     <i className="fas fa-sign-out-alt"></i> {' '}
                     <span className="hide-sm">Logout</span>
                 </Link>
@@ -27,7 +39,7 @@ export const Navbar = ({ auth: { isAuthenticated, loading }, logout }) => {
     );
     const guestLinks = (
         <ul>
-            <li><Link to="/profiles">Students</Link></li>
+            {/* <li><Link to="/profiles">Students</Link></li> */}
             <li><Link to="/register">Register</Link></li>
             <li><Link to="/login">Login</Link></li>
         </ul>
@@ -46,10 +58,13 @@ export const Navbar = ({ auth: { isAuthenticated, loading }, logout }) => {
 
 Navbar.prototype = {
     logout: PropTypes.func.isRequired,
-    auth: PropTypes.object.isRequired
+    auth: PropTypes.object.isRequired,
+    getCurrentProfile: PropTypes.func.isRequired,
+    profile: PropTypes.object.isRequired
 }
 const mapStateToProps = (state) => ({
-    auth: state.auth
+    auth: state.auth,
+    profile: state.profile
     //isAuthenticated: state.auth.isAuthenticated
 });
-export default connect(mapStateToProps, { logout })(Navbar);
+export default connect(mapStateToProps, { logout, getCurrentProfile })(Navbar);

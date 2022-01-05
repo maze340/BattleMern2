@@ -91,10 +91,14 @@
       "__v": 0
     },
     {
+      "_id": "61d0831575eb97313c8b79d0",
       "name": "Michael",
       "email": "m@mail.com",
       "password": "123456",
-      "type": "student"
+      "avatar": "//www.gravatar.com/avatar/6bf1c3e37665abb9a1e0e3f81796c87c?s=200&r=pg&d=mm",
+      "type": "student",
+      "date": "2022-01-01T16:36:37.371Z",
+      "__v": 0
     }
-  ]dddd
+  ]
 }

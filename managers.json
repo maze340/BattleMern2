@@ -39,6 +39,12 @@
       "type": "manager",
       "date": "2021-12-30T09:15:18.755Z",
       "__v": 0
+    },
+    {
+      "name": "gol",
+      "email": "gol@hotmail.fr",
+      "password": "123456",
+      "type": "manager"
     }
   ]
 }

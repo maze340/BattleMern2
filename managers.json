@@ -1,0 +1,14 @@
+{
+  "users": [
+    {
+      "_id": "61d5bd9e35821f6a2ccd7fdb",
+      "name": "manager",
+      "email": "manager@mail.com",
+      "password": "123456",
+      "avatar": "//www.gravatar.com/avatar/c8113aee8916b33d4cb00bc9189b87e2?s=200&r=pg&d=mm",
+      "type": "manager",
+      "date": "2022-01-05T15:47:42.165Z",
+      "__v": 0
+    }
+  ]
+}

@@ -15,9 +15,14 @@ const Register = ({ setAlert, register, isAuthenticated }) => {
         name: '',
         email: '',
         password: '',
-        password2: ''
+        password2: '',
+
+        //£
+        type: ''
     });
-    const { name, email, password, password2 } = formData;
+
+    //£
+    const { name, email, password, password2, type } = formData;
 
     const onChange = (e) =>
         setFormData({ ...formData, [e.target.name]: e.target.value });
@@ -43,7 +48,11 @@ const Register = ({ setAlert, register, isAuthenticated }) => {
             // } catch (err) {
             //     console.error(err.response.data);
             // }
-            register({ name, email, password });
+
+            //£
+            register({ name, email, password, type });
+            console.log(name);
+            console.log(type);
         }
     };
     if (isAuthenticated) { //?- Redirect after authentificated
@@ -93,6 +102,26 @@ const Register = ({ setAlert, register, isAuthenticated }) => {
                         onChange={onChange}
                     />
                 </div>
+
+                 {/* £ */}
+                 <div className="form-group">
+                    <select name="type" value={type} onChange={onChange}>
+                        <option value="0">* Select Status</option>
+                        <option value="teacher">Teacher</option>
+                        <option value="manager">School Manager</option>
+                        <option value="student">Student</option>
+                    </select>
+                    <small className="form-text">Give us your status</small>
+                </div>
+
+
+
+
+
+
+
+
+
                 <input type="submit" className="btn btn-primary" value="Register" />
             </form>
             <p className="my-1">

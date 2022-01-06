@@ -1,0 +1,14 @@
+{
+  "users": [
+    {
+      "_id": "61d5bd46b3da3b99b05e5c1b",
+      "name": "Hadas",
+      "email": "hadas@mail.com",
+      "password": "123456",
+      "avatar": "//www.gravatar.com/avatar/08ae331bbdf930df9a441fd5e9a63f4a?s=200&r=pg&d=mm",
+      "type": "teacher",
+      "date": "2022-01-05T15:46:14.596Z",
+      "__v": 0
+    }
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "users": [
+    {
+      "_id": "61d5bcd11936278bc49c3bdf",
+      "name": "Michael",
+      "email": "m@mail.com",
+      "password": "123456",
+      "avatar": "//www.gravatar.com/avatar/6bf1c3e37665abb9a1e0e3f81796c87c?s=200&r=pg&d=mm",
+      "type": "student",
+      "date": "2022-01-05T15:44:17.539Z",
+      "__v": 0
+    },
+    {
+      "name": "David",
+      "email": "d@mail.com",
+      "password": "123456",
+      "type": "student"
+    }
+  ]
+}

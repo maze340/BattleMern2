@@ -1,50 +1,14 @@
 {
   "users": [
     {
-      "_id": "61cceab6946df73cf83fe2af",
-      "name": "kola",
-      "email": "k2@hotmail.fr",
-      "password": "secret",
-      "avatar": "//www.gravatar.com/avatar/1be39dceb530ca03c379cbf9239ac6d6?s=200&r=pg&d=mm",
-      "type": "manager",
-      "date": "2021-12-29T23:09:42.987Z",
-      "__v": 0
-    },
-    {
-      "_id": "61cceee4f3bd46543cb6b9d3",
-      "name": "poi",
-      "email": "poi@hotmail.fr",
-      "password": "123456",
-      "avatar": "//www.gravatar.com/avatar/c4d8b20b1b9849039cede2c2d810e983?s=200&r=pg&d=mm",
-      "type": "manager",
-      "date": "2021-12-29T23:27:32.957Z",
-      "__v": 0
-    },
-    {
-      "_id": "61ccef371cfaa778ccb4027a",
-      "name": "pio",
-      "email": "pio@hotmail.fr",
-      "password": "123456",
-      "avatar": "//www.gravatar.com/avatar/62e714e51463b491b139339a6b87e5b7?s=200&r=pg&d=mm",
-      "type": "manager",
-      "date": "2021-12-29T23:28:55.746Z",
-      "__v": 0
-    },
-    {
-      "_id": "61cd78a6863ef169fca223e8",
+      "_id": "61d5bd9e35821f6a2ccd7fdb",
       "name": "manager",
-      "email": "manager@hotmail.fr",
+      "email": "manager@mail.com",
       "password": "123456",
-      "avatar": "//www.gravatar.com/avatar/59340cb5ec8f6a2e304a405b2e143dad?s=200&r=pg&d=mm",
+      "avatar": "//www.gravatar.com/avatar/c8113aee8916b33d4cb00bc9189b87e2?s=200&r=pg&d=mm",
       "type": "manager",
-      "date": "2021-12-30T09:15:18.755Z",
+      "date": "2022-01-05T15:47:42.165Z",
       "__v": 0
-    },
-    {
-      "name": "gol",
-      "email": "gol@hotmail.fr",
-      "password": "123456",
-      "type": "manager"
     }
   ]
 }
